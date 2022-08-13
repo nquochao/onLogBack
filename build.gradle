@@ -12,7 +12,9 @@ repositories {
 dependencies {
 
     
-        implementation group: 'org.slf4j', name:'slf4j-api', version: '1.7.2'
+    implementation group: 'org.slf4j', name:'slf4j-api', version: '1.7.2'
+	// logback-classic enables the usage of interface of slf4j. It needs logback-core as a foundation.
+	// slf4j is an interface can be implemented with either logback, log4j java util.logging.
     implementation group: 'ch.qos.logback', name:'logback-classic', version: '1.2.3'
     implementation group: 'ch.qos.logback', name:'logback-core', version: '1.2.3'
     
